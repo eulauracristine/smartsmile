@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Dashboard - Paciente | Smart Smile</title>
+     <!-- Favicons -->
+    <link href="assets/img/logo.jpg" rel="icon">
+	<link href="assets/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/paciente.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="dashboard_paciente.html">
+                  <img src="assets/img/logo.jpg" alt="Smart Smile" class="logo-sidebar">
+                </a>
+
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header"></li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="dashboard_paciente.html">
+							<i class="align-middle" data-feather="home"></i> 
+							<span class="align-middle">Dashboard</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="paciente_perfil.html">
+							<i class="align-middle" data-feather="user"></i> 
+							<span class="align-middle">Meu Perfil</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="paciente_agendamento.html">
+							<i class="align-middle" data-feather="calendar"></i> 
+							<span class="align-middle">Agendar Consulta</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="paciente_consultas.html">
+							<i class="align-middle" data-feather="clipboard"></i> 
+							<span class="align-middle">Minhas Consultas</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="paciente_pagamentos.html">
+							<i class="align-middle" data-feather="credit-card"></i> 
+							<span class="align-middle">Pagamentos</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="paciente_historico.html">
+							<i class="align-middle" data-feather="file-text"></i>
+							<span class="align-middle">Histórico</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="sidebar-cta">
+					<div class="d-grid">
+						<a href="index.html" class="btn btn-danger">Sair</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+					<i class="hamburger align-self-center"></i>
+				</a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+								<img src="assets/img/avatars/avatar-3.jpg" class="avatar img-fluid rounded me-1" alt="Paciente" />
+								<span class="text-dark">Olá, Paciente 👋</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end">
+	
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="index.html">Sair</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3"><strong>Bem-vindo</strong> ao seu painel</h1>
+			<div class="row stats-cards">
+
+				<div class="col-sm-6 col-xl-3">
+					<div class="card">
+						<div class="card-body text-center">
+							<i data-feather="calendar" class="icon-card"></i>
+							<h5 class="card-title">Próxima Consulta</h5>
+							<h3>12/11/2025</h3>
+							<p>Dr. João • Limpeza Dental</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-xl-3">
+					<div class="card">
+						<div class="card-body text-center">
+							<i data-feather="check-circle" class="icon-card"></i>
+							<h5 class="card-title">Consultas Realizadas</h5>
+							<h3>08</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-xl-3">
+					<div class="card">
+						<div class="card-body text-center">
+							<i data-feather="credit-card" class="icon-card"></i>
+							<h5 class="card-title">Pagamentos Pendentes</h5>
+							<h3>R$ 0,00</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-xl-3">
+					<div class="card">
+						<div class="card-body text-center">
+							<i data-feather="message-circle" class="icon-card"></i>
+							<h5 class="card-title">Mensagens da Clínica</h5>
+							<h3>2</h3>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<script src="assets/js/app.js"></script>
+	
+
+</body>
+
+</html>

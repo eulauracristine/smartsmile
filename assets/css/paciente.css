@@ -1,0 +1,185 @@
+/* Paleta */
+:root {
+  --roxo-escuro: #271753;
+  --lilas: #b084cc;
+  --lilas-claro: #d4afed;
+  --branco: #ffffff;
+  --cinza-claro: #f5f5f5;
+  --btn-hover: #a88cf0;
+  --sidebar-width: 220px;
+
+  /* Tema */
+  --ss-bg: #f6f2ff;
+  --ss-primary: #271753;
+  --ss-primary-light: #b084cc;
+  --ss-card-radius: 20px;
+}
+
+/* ===== Estrutura Geral ===== */
+body, .main {
+  background: var(--ss-bg) !important;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ===== Ondas de fundo ===== */
+.main:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5%;
+  width: 120%;
+  height: 100%;
+  background: url('../img/wave-purple.svg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.28;
+  z-index: -1;
+  animation: floatWave 6s ease-in-out infinite alternate;
+}
+
+@keyframes floatWave {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(12px); }
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  background-color: var(--roxo-escuro) !important;
+  width: var(--sidebar-width);
+  border-right: none;
+}
+
+.sidebar-brand {
+  background-color: var(--roxo-escuro) !important;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--branco) !important;
+
+}
+
+.sidebar-nav .sidebar-item .sidebar-link {
+  background-color: var(--roxo-escuro) !important;
+  color: var(--branco) !important;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.sidebar-nav .sidebar-item.active .sidebar-link,
+.sidebar-nav .sidebar-item .sidebar-link:hover {
+  background: var(--lilas) !important;
+  color: var(--branco) !important;
+}
+
+.sidebar-nav{
+  background-color: #271753;
+}
+
+/* Botão sair */
+.sidebar-cta .btn-danger {
+  background: var(--lilas) !important;
+  border: none;
+}
+
+.sidebar-cta .btn-danger:hover {
+  background: var(--btn-hover) !important;
+}
+
+/* ===== Navbar superior ===== */
+.navbar-bg {
+  background: #fff !important;
+  border-bottom: 2px solid var(--lilas);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.logo-sidebar {
+  width: 200px;
+
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+
+/* ===== Texto ===== */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--roxo-escuro) !important;
+  margin-bottom: 35px;
+}
+
+h1 strong {
+  color: var(--roxo-escuro);
+}
+
+/* ===== Cards ===== */
+.card {
+  background: var(--branco) !important;
+  border-radius: var(--ss-card-radius);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1) !important;
+  border: none !important;
+  padding: 15px;
+  transition: 0.25s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15) !important;
+}
+
+/* Ícones nos cards */
+.icon-card {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+  stroke: var(--roxo-escuro);
+}
+
+/* Títulos */
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--roxo-escuro);
+  margin-bottom: 5px;
+}
+
+.card-body h3 {
+  font-weight: 700;
+  color: var(--roxo-escuro);
+  font-size: 22px;
+}
+
+/* ===== Layout dos cards ===== */
+.row.stats-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.col-sm-6.col-xl-3 {
+  flex: 0 0 260px;
+  max-width: 260px;
+}
+
+.card {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Usuário topo ===== */
+.nav-link.dropdown-toggle span {
+  font-weight: 600;
+  color: var(--roxo-escuro) !important;
+}
+
+.dropdown-menu a:hover {
+  background: var(--lilas);
+  color: #fff !important;
+}

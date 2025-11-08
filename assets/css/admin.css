@@ -1,0 +1,223 @@
+:root {
+  --roxo-escuro: #271753;
+  --lilas: #b084cc;
+  --lilas-claro: #d4afed;
+  --branco: #ffffff;
+  --cinza-claro: #f5f5f5;
+  --btn-hover: #a88cf0;
+  --sidebar-width: 220px;
+
+  /* Tema */
+  --ss-bg: #f6f2ff;
+  --ss-primary: #271753;
+  --ss-primary-light: #b084cc;
+  --ss-card-radius: 20px;
+}
+
+/* ===== Estrutura Geral ===== */
+body, .main {
+  background: var(--ss-bg) !important;
+  position: relative;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== Ondas de fundo ===== */
+.main:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5%;
+  width: 120%;
+  height: 100%;
+  background: url('../img/wave-purple.svg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.28;
+  z-index: -1;
+  animation: floatWave 6s ease-in-out infinite alternate;
+}
+
+@keyframes floatWave {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(12px); }
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  background-color: var(--roxo-escuro) !important;
+  width: var(--sidebar-width);
+  border-right: none;
+}
+
+.sidebar-brand {
+  background-color: var(--roxo-escuro) !important;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--branco) !important;
+}
+
+.sidebar-nav .sidebar-item .sidebar-link {
+  background-color: var(--roxo-escuro) !important;
+  color: var(--branco) !important;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.sidebar-nav .sidebar-item.active .sidebar-link,
+.sidebar-nav .sidebar-item .sidebar-link:hover {
+  background: var(--lilas) !important;
+  color: var(--branco) !important;
+}
+
+.sidebar-nav {
+  background-color: #271753;
+}
+
+/* Botão sair */
+.sidebar-cta .btn-danger {
+  background: var(--lilas) !important;
+  border: none;
+}
+
+.sidebar-cta .btn-danger:hover {
+  background: var(--btn-hover) !important;
+}
+
+/* ===== Navbar superior ===== */
+.navbar-bg {
+  background: #fff !important;
+  border-bottom: 2px solid var(--lilas);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.logo-sidebar {
+  width: 200px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+/* ===== Usuário topo ===== */
+.nav-link.dropdown-toggle span {
+  font-weight: 600;
+  color: var(--roxo-escuro) !important;
+}
+
+.dropdown-menu a:hover {
+  background: var(--lilas);
+  color: #fff !important;
+}
+
+/* ======================================
+   🌟 ESTILO DO CONTEÚDO PRINCIPAL (NOVO)
+====================================== */
+
+/* Fundo principal do conteúdo */
+.main {
+  background-color: #f7f8fc !important;
+}
+
+/* ===== TÍTULO E SUBTÍTULO ===== */
+.main h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #271753;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.main p {
+  color: #2e2e2e;
+  font-size: 16px;
+}
+
+.main p strong {
+  color: #271753;
+}
+
+/* ===== CARDS ===== */
+.main .card {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: left;
+  width: 20rem;
+  padding: 10px 20px;
+}
+
+.main .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(39, 23, 83, 0.15);
+}
+
+/* Título do card */
+.main .card-title {
+  color: #271753;
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+/* Texto interno dos cards */
+.main .card h4 {
+  font-size: 16px;
+  color: #3c3c3c;
+  margin-bottom: 5px;
+}
+
+.main .card h4 strong {
+  color: #000;
+}
+
+/* ===== BOTÕES ===== */
+.main .btn-primary {
+  background-color: #271753;
+  border: none;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.main .btn-primary:hover {
+  background-color: #3a207a;
+  transform: translateY(-2px);
+}
+
+/* ===== LAYOUT DOS CARDS ===== */
+.main .d-flex.gap-4 {
+  gap: 2rem !important;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .main h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .main p {
+    text-align: center;
+  }
+
+  .main .d-flex.gap-4 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main .card {
+    width: 90%;
+  }
+}

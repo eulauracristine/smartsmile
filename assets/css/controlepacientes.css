@@ -1,0 +1,301 @@
+:root {
+  --roxo-escuro: #271753;
+  --lilas: #b084cc;
+  --lilas-claro: #d4afed;
+  --branco: #ffffff;
+  --cinza-claro: #f5f5f5;
+  --btn-hover: #a88cf0;
+  --sidebar-width: 220px;
+
+  /* Tema */
+  --ss-bg: #f6f2ff;
+  --ss-primary: #271753;
+  --ss-primary-light: #b084cc;
+  --ss-card-radius: 20px;
+}
+
+/* ===== Estrutura Geral ===== */
+body, .main {
+  background: var(--ss-bg) !important;
+  position: relative;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== Ondas de fundo ===== */
+.main:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5%;
+  width: 120%;
+  height: 100%;
+  background: url('../img/wave-purple.svg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.28;
+  z-index: -1;
+  animation: floatWave 6s ease-in-out infinite alternate;
+}
+
+@keyframes floatWave {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(12px); }
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  background-color: var(--roxo-escuro) !important;
+  width: var(--sidebar-width);
+  border-right: none;
+}
+
+.sidebar-brand {
+  background-color: var(--roxo-escuro) !important;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--branco) !important;
+}
+
+.sidebar-nav .sidebar-item .sidebar-link {
+  background-color: var(--roxo-escuro) !important;
+  color: var(--branco) !important;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.sidebar-nav .sidebar-item.active .sidebar-link,
+.sidebar-nav .sidebar-item .sidebar-link:hover {
+  background: var(--lilas) !important;
+  color: var(--branco) !important;
+}
+
+.sidebar-nav {
+  background-color: #271753;
+}
+
+/* Botão sair */
+.sidebar-cta .btn-danger {
+  background: var(--lilas) !important;
+  border: none;
+}
+
+.sidebar-cta .btn-danger:hover {
+  background: var(--btn-hover) !important;
+}
+
+/* ===== Navbar superior ===== */
+.navbar-bg {
+  background: #fff !important;
+  border-bottom: 2px solid var(--lilas);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.logo-sidebar {
+  width: 200px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+/* ===== Usuário topo ===== */
+.nav-link.dropdown-toggle span {
+  font-weight: 600;
+  color: var(--roxo-escuro) !important;
+}
+
+.dropdown-menu a:hover {
+  background: var(--lilas);
+  color: #fff !important;
+}
+
+/* ======================================
+   🌟 ESTILO DO CONTEÚDO PRINCIPAL (NOVO)
+====================================== */
+
+/* Fundo principal do conteúdo */
+.main {
+  background-color: #f7f8fc !important;
+}
+
+/* ===== TÍTULO E SUBTÍTULO ===== */
+.main h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #271753;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.main p {
+  color: #2e2e2e;
+  font-size: 16px;
+}
+
+.main p strong {
+  color: #271753;
+}
+
+
+
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .main h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .main p {
+    text-align: center;
+  }
+
+  .main .d-flex.gap-4 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main .card {
+    width: 90%;
+  }
+}
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(39, 23, 83, 0.1);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Cabeçalho */
+.table thead {
+  background-color: #b084cc;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.table thead th {
+  padding: 14px 12px;
+  text-align: center;
+  border: none;
+}
+
+/* Linhas */
+.table tbody tr:nth-child(even) {
+  background-color: #f6f2ff;
+}
+
+.table tbody tr:hover {
+  background-color: #eaddff;
+  transition: 0.25s ease;
+}
+
+.table tbody td {
+  padding: 12px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  color: #333;
+}
+
+/* Botão Deletar */
+.btn-danger.btn-sm {
+  background-color: #b084cc;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-weight: 500;
+  transition: background-color 0.25s ease;
+}
+
+.btn-danger.btn-sm:hover {
+  background-color: #a06fd9;
+}
+
+/* Mensagens */
+.alert-success {
+  background-color: #f3e8ff;
+  color: #271753;
+  border: 1px solid #b084cc;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.alert-warning {
+  background-color: #fff5f5;
+  color: #6a1b9a;
+  border: 1px solid #d4afed;
+  border-radius: 10px;
+}
+
+/* Container da tabela */
+.container.mt-5 {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+}
+/* ===== Ajustes Finais da Tabela ===== */
+
+/* Centraliza e reduz a largura */
+.container.mt-5 {
+  max-width: 85%; /* diminui a largura da tabela */
+  margin: 40px auto; /* centraliza horizontalmente */
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+/* Cabeçalho roxo escuro */
+.table thead {
+  background-color: var(--roxo-escuro);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Linhas alternadas com leve lilás */
+.table tbody tr:nth-child(even) {
+  background-color: #f6f2ff;
+}
+
+/* Linhas ao passar o mouse */
+.table tbody tr:hover {
+  background-color: #ede1ff;
+  transition: 0.25s ease;
+}
+
+/* Botão “Deletar” */
+.btn-danger.btn-sm {
+  background-color: var(--lilas);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-weight: 500;
+  transition: background-color 0.25s ease;
+}
+
+.btn-danger.btn-sm:hover {
+  background-color: var(--btn-hover);
+}
+.table thead {
+  background-color: var(--roxo-escuro) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+/* ===== Força o texto branco no cabeçalho ===== */
+.table thead th {
+  color: #ffffff !important;
+  font-weight: 600;
+}

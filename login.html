@@ -13,43 +13,46 @@
 
 <body>
 
+    <!--correção da sobreposição do cadastro-->
+    <!--erro na classe .sign in, onde o css não detectava quando o "modo cadastro" era ativado-->
 <div class="container-login">
 
-    <div class="forms-container">
-        <div class="signin-signup">
+   <div class="forms-container">
+    <div class="signin-signup">
 
-<form action="login.php" method="POST">
-                <div class="text-center mb-3">
-                    <img src="assets/img/logo.jpg" height="60" alt="Logo Smart Smile">
-                    <h3 class="mt-2">Acesse sua conta</h3>
-                </div>
+        <form action="login.php" method="POST" class="sign-in-form">
+            <div class="text-center mb-3">
+                <img src="assets/img/logo.jpg" height="60" alt="Logo Smart Smile">
+                <h3 class="mt-2">Acesse sua conta</h3>
+            </div>
 
-                <input type="email" id="signInEmail" class="form-control mb-3" placeholder="E-mail" required name="email">
-                <input type="password" id="signInSenha" class="form-control mb-3" placeholder="Senha" required name="senha">
+            <input type="email" id="signInEmail" class="form-control mb-3" placeholder="E-mail" required name="email">
+            <input type="password" id="signInSenha" class="form-control mb-3" placeholder="Senha" required name="senha">
 
-                <button type="submit" class="btn-login w-100">Entrar</button>
-            </form>
+            <button type="submit" class="btn-login w-100">Entrar</button>
+        </form>
 
-            <form id="signUpForm" class="sign-up-form" action="cadastro.php" method="POST">
-                <div class="text-center mb-3">
-                    <img src="assets/img/logo.jpg" height="60" alt="Logo Smart Smile">
-                    <h3 class="mt-2">Crie sua conta</h3>
-                </div>
+        <form id="signUpForm" class="sign-up-form" action="cadastro.php" method="POST">
+            <div class="text-center mb-3">
+                <img src="assets/img/logo.jpg" height="60" alt="Logo Smart Smile">
+                <h3 class="mt-2">Crie sua conta</h3>
+            </div>
 
-                <input type="text" id="signUpNome" class="form-control mb-2" placeholder="Nome completo" required name="nome">
-                <input type="email" id="signUpEmail" class="form-control mb-2" placeholder="E-mail" required name="email">
-                <input type="password" id="signUpSenha" class="form-control mb-2" placeholder="Senha (6 dígitos)" required minlength="6" maxlength="6" name="senha">
-                <input type="password" id="signUpConfirmaSenha" class="form-control mb-2" placeholder="Confirmar senha" required minlength="6" maxlength="6" name="confirma_senha">
-                
-                <input type="text" id="signUpCpf" class="form-control mb-2" placeholder="CPF (Ex: 000.000.000-00)" required minlength="14" maxlength="14" name="cpf">
-                <input type="tel" id="signUpTelefone" class="form-control mb-2" placeholder="Telefone (Ex: (00) 90000-0000)" required minlength="14" maxlength="15" name="telefone">
-                <input type="date" id="signUpDataNascimento" class="form-control mb-3" required name="data_nascimento">
-                
-                <button type="submit" class="btn-login w-100">Cadastrar</button> 
-            </form>
+            <input type="text" id="signUpNome" class="form-control mb-2" placeholder="Nome completo" required name="nome">
+            <input type="email" id="signUpEmail" class="form-control mb-2" placeholder="E-mail" required name="email">
+            <input type="password" id="signUpSenha" class="form-control mb-2" placeholder="Senha (6 dígitos)" required minlength="6" maxlength="6" name="senha">
+            <input type="password" id="signUpConfirmaSenha" class="form-control mb-2" placeholder="Confirmar senha" required minlength="6" maxlength="6" name="confirma_senha">
+            
+            <input type="text" id="signUpCpf" class="form-control mb-2" placeholder="CPF (Ex: 000.000.000-00)" required minlength="14" maxlength="14" name="cpf">
+            <input type="tel" id="signUpTelefone" class="form-control mb-2" placeholder="Telefone (Ex: (00) 90000-0000)" required minlength="14" maxlength="15" name="telefone">
+            <input type="date" id="signUpDataNascimento" class="form-control mb-3" required name="data_nascimento">
+            
+            <button type="submit" class="btn-login w-100">Cadastrar</button> 
+        </form>
 
-        </div>
     </div>
+</div>
+
 
     <div class="panels-container">
 

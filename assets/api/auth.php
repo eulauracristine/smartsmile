@@ -66,8 +66,6 @@ function get_user_role($link, $user_id) {
 
 // --- CONTROLE DE AÇÕES ---
 
-
-
 switch ($action) {
     case 'register':
         // CADASTRO (CREATE)

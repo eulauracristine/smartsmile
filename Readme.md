@@ -65,3 +65,17 @@ O JavaScript precisa do caminho correto para o backend. Certifique-se de que a `
 ```javascript
 // A URL deve refletir o nome da sua pasta no htdocs
 const API_URL = '/SmartSmile/assets/api/auth.php';
+
+5. Execução do Projeto
+Abra seu navegador e acesse a tela de login:
+
+http://localhost/SmartSmile/login.html
+
+Equipe
+
+Líder/Documentação	Yasmin Julia Oliveira da Silva	
+Desenvolvedora	Laura Cristine Silva	
+Desenvolvedora	Maria Eduarda Silva Souza	
+Analista	Manuela de Almeida Gonçalves	
+Analista/Testadora	Geovanna Silva Laurentino
+Analista/Testador	Bruno Macedo Medrades

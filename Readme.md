@@ -2,6 +2,8 @@
 
 Este projeto implementa a solução digital integrada para a **Clínica Odontológica Smart Smile**, visando modernizar os processos administrativos e clínicos. O foco inicial é no módulo de **Autenticação e Perfil (CRUD)**, utilizando uma arquitetura **PHP/MySQL** com chamadas **AJAX** para a comunicação com o frontend.
 
+Este projeto também foi integrado a um protótipo com Arduino. O QR Code gerado no cadastro do site era lido por um leitor de QR conectado ao Arduino e, ao ser reconhecido, uma pequena porta se abria, simulando o controle de acesso de uma clínica. Essa integração demonstrou, de forma prática, a união entre o sistema web e a automação.
+
 ---
 
 ## 🌟 Visão Geral e Benefícios
